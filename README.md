@@ -1,9 +1,9 @@
-# SpywareRemover
+# Spyware and Bloatware Remover
 
 **Disclaimer:** This project is currently in developement. Use at your own risk.
 
 ## Overview
-SpywareRemover is a batchfile. It aims to remove builtin spyware and bloatware on Microsoft Windows 10/11 and.
+Spyware and Bloatware Remover is a batchfile that aims to remove builtin spyware and bloatware on Microsoft Windows 10/11 and.
 
 ## Things that the project can remove
 
