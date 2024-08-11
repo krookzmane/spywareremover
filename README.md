@@ -12,8 +12,6 @@ Spyware and Bloatware Remover is a batchfile that aims to remove builtin spyware
  3. Windows 11's advertising ID
  4. Built-in apps (Edge, Feedback Hub)
  5. Built-in services (DiagTrack, dmwappushservice, WerSvc)
- 6. All of the above
- 7. Exit
 
 ## Installation and usage
 
