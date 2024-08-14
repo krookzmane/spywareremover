@@ -3,7 +3,7 @@
 **Disclaimer:** This project is currently in developement. Use at your own risk.
 
 ## Overview
-Spyware and Bloatware Remover is a batchfile that aims to remove builtin spyware and bloatware on Microsoft Windows 10/11 and.
+Spyware and Bloatware Remover is a batchfile that aims to remove builtin spyware and bloatware on Microsoft Windows 10/11.
 
 ## Things that the project can remove
 
