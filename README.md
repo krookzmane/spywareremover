@@ -16,3 +16,7 @@ Spyware and Bloatware Remover is a batchfile that aims to remove builtin spyware
 ## Installation and usage
 
 Download the project via the releases page, unzip it and run the .bat file.
+OR
+```console
+git clone https://github.com/shadowkrooks/spywareremover
+```
