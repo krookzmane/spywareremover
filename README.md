@@ -1,6 +1,8 @@
-## Spyware and Bloatware Remover
+# Spyware and Bloatware Remover
 
-**Disclaimer:** This project is provided for educational purposes only. Use at your own risk. Modifying system settings can potentially disrupt functionality.
+## Disclaimer
+
+This script is provided for educational purposes only. By using it, you accept full responsibility for any consequences. Ensure you understand the functionality of each option before selecting it. 
 
 ## Overview
 
@@ -49,7 +51,3 @@ git clone https://github.com/shadowkrooks/spywareremover
 **5. Completion:** Once the selected action is completed, the script will inform you and provide further instructions (if applicable).
 
 **Important:** It's recommended to create a system restore point before using this script in case you need to revert any changes.
-
-## Disclaimer (Reiterated)
-
-This script is provided for educational purposes only. By using it, you accept full responsibility for any consequences. Ensure you understand the functionality of each option before selecting it. 
