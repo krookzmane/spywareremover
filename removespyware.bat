@@ -16,8 +16,9 @@ echo  2. Web search (Removes Bing integration in Windows Search)
 echo  3. Windows 11's advertising ID (Opt-out of targeted advertising)
 echo  4. Built-in apps (Completely removes Edge, Cortana, Feedback Hub)
 echo  5. Built-in services (Disables DiagTrack, dmwappushservice, WerSvc)
-echo  6. All of the above (Perform all removals mentioned above)
-echo  7. Exit
+echo  6. Recall
+echo  7. All of the above (Perform all removals mentioned above)
+echo  8. Exit
 
 set /p choice=Enter your choice (1-7): 
 
