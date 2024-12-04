@@ -21,7 +21,7 @@ Spyware and Bloatware Remover is a batch script designed to help you remove tele
 
 ### Downloading and Running the Script
 
-1. **Download the latest release:** Head over to the Releases page ([invalid URL removed]) and download the latest .zip file.
+1. **Download the latest release:** Head over to the Releases page and download the latest .zip file.
 2. **Extract the files:** Unzip the downloaded file.
 3. **Run the script:** Double-click the `SpywareRemover.bat` file.
 
