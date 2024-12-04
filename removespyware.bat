@@ -26,8 +26,9 @@ if %choice%==2 goto cortana
 if %choice%==3 goto advertising
 if %choice%==4 goto apps
 if %choice%==5 goto services
-if %choice%==6 goto all
-if %choice%==7 goto exit
+if %choice%==6 goto recall
+if %choice%==7 goto all
+if %choice%==8 goto exit
 echo Invalid choice. Please try again.
 pause
 goto menu
@@ -69,6 +70,13 @@ sc config dmwappushservice start= disabled
 sc stop WerSvc
 sc config WerSvc start= disabled
 echo Built-in services disabled.
+pause
+goto menu
+
+:recall
+schtasks /delete /tn "Microsoft\Windows\Recall\Recall_ScheduledTask" /f
+schtasks /delete /tn "Microsoft\Windows\Recall\Recall_ScheduledTask_User" /f
+echo Recall disabled.
 pause
 goto menu
 
