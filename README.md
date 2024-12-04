@@ -39,9 +39,13 @@ git clone https://github.com/shadowkrooks/spywareremover
 ## Usage Instructions
 
 **1. Launch the script:** As mentioned above, run the `SpywareRemover.bat` file.
+
 **2. Select options:** The script will present a menu with various options for what you want to remove or disable.
+
 **3. Follow prompts:** Enter the corresponding number for the desired action and press Enter.
+
 **4. Confirmation:** The script will confirm your choice before proceeding.
+
 **5. Completion:** Once the selected action is completed, the script will inform you and provide further instructions (if applicable).
 
 **Important:** It's recommended to create a system restore point before using this script in case you need to revert any changes.
