@@ -13,7 +13,7 @@ Spyware and Bloatware Remover is a batch script designed to help you remove tele
 * **Disables Windows 11's Advertising ID:** Opt-out of targeted advertising based on your browsing habits.
 * **Removes Built-in Apps (Edge, Cortana, Feedback Hub):** Completely uninstalls these applications.
 * **Disables Built-in Services (DiagTrack, dmwappushservice, WerSvc):** Stops and disables these services that collect data and send system reports.
-* **Disables Recall (Windows 11):** Prevents Recall from collecting and syncing data across devices.
+* **Disables Recall (Windows 11):** Prevents Recall from collecting data on your device.
 
 ## Installation and Usage
 
