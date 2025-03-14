@@ -1,13 +1,13 @@
 @echo off
 cls
 
+:menu
 echo.
 echo  ==========================================================
 echo  Windows 11 Telemetry and Bloatware Remover by SH4D0WKR00KS
 echo  ==========================================================
 echo.
-echo  WARNING : Modifying system settings can potentially disrupt functionality. Use with caution.
-
+echo  WARNING: Modifying system settings can potentially disrupt functionality. Use with caution.
 echo.
 echo  Choose what to remove:
 echo.
@@ -19,17 +19,19 @@ echo  5. Built-in services (Disables DiagTrack, dmwappushservice, WerSvc)
 echo  6. Recall
 echo  7. All of the above (Perform all removals mentioned above)
 echo  8. Exit
+echo.
 
-set /p choice=Enter your choice (1-7): 
+set /p choice=Enter your choice (1-8):
 
-if %choice%==1 goto telemetry
-if %choice%==2 goto cortana
-if %choice%==3 goto advertising
-if %choice%==4 goto apps
-if %choice%==5 goto services
-if %choice%==6 goto recall
-if %choice%==7 goto all
-if %choice%==8 goto exit
+if "%choice%"=="1" goto telemetry
+if "%choice%"=="2" goto websearch
+if "%choice%"=="3" goto advertising
+if "%choice%"=="4" goto apps
+if "%choice%"=="5" goto services
+if "%choice%"=="6" goto recall
+if "%choice%"=="7" goto all
+if "%choice%"=="8" goto exit
+
 echo Invalid choice. Please try again.
 pause
 goto menu
@@ -42,7 +44,7 @@ echo Telemetry and data collection disabled.
 pause
 goto menu
 
-:cortana
+:websearch
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v DisableWebSearch /t REG_DWORD /d 1 /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v DisableCortana /t REG_DWORD /d 1 /f
 echo Cortana and web search disabled.
@@ -82,10 +84,17 @@ pause
 goto menu
 
 :all
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v AllowTelemetry /t REG_DWORD /d 0 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v AllowDeviceNameInTelemetry /t REG_DWORD /d 0 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v MaxTelemetryEnabled /t REG_DWORD /d 0 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v DisableWebSearch /t REG_DWORD /d 1 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v DisableCortana /t REG_DWORD /d 1 /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo" /v Enabled /t REG_DWORD /d 0 /f
-powers
+call :telemetry
+call :websearch
+call :advertising
+call :apps
+call :services
+call :recall
+echo All removals completed.
+pause
+goto menu
+
+:exit
+echo Exiting...
+pause
+exit
