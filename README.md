@@ -32,7 +32,7 @@ Spyware and Bloatware Remover is a batch script designed to help you remove tele
 3. **Clone the repository:** Run the following command:
 
 ```
-git clone https://github.com/toxikbiohazard/spywareremover
+git clone https://github.com/krookzmane/spywareremover
 ```
 
 4. **Change directory:** Once cloned, navigate into the `spywareremover` directory.
