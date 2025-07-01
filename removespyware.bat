@@ -4,7 +4,7 @@ cls
 :menu
 echo.
 echo  ==========================================================
-echo  Windows 11 Telemetry and Bloatware Remover by SH4D0WKR00KS
+echo  Windows 11 Telemetry and Bloatware Remover by KROOKZMANE
 echo  ==========================================================
 echo.
 echo  WARNING: Modifying system settings can potentially disrupt functionality. Use with caution.
